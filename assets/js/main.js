@@ -55,6 +55,28 @@
             //Crear Fila
             var fila = '<tr><td scope="row"> ' + codigo + '</td><td>' + nom_produc + '</td><td>' + marca +
                 '</td><td>' + precio + '</td><td>' + cantidad + '</td><td><button type="button" class="modificar btn btn-primary">Modificar</button></td><td><button type="button" class="eliminar btn btn-danger">Eliminar</button></td></tr>';
+            // $.ajax({
+            //     url: 'php/insertar.php',
+            //     type: 'post',
+            //     dataType: 'json',
+            //     data:{
+            //         codigo: codigo,
+            //         nom_produc: nom_produc,
+            //         marca: marca,
+            //         precio:precio,
+            //         cantidad: cantidad
+            //     }
+            // }).done(
+            //     function(data){
+            //         document.getElementById("codigo").value = '';
+            //         document.getElementById("nom-produc").value = '';
+            //         document.getElementById("marca").value = '';
+            //         document.getElementById("precio").value = '';
+            //         document.getElementById("cantidad").value = '';
+            //     }
+            // )
+            
+            
             //Agregar Fila
             document.getElementById("datos-tabla").insertAdjacentHTML('beforeend', fila);
 
