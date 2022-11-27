@@ -31,7 +31,8 @@ if (mysqli_num_rows($result) > 0) {
 
 //Eliminar
 
-$sql2 = "DELETE FROM productos WHERE id=$id";
+$sql2 = "DELETE FROM productos
+ WHERE id=$id";
 
 if (mysqli_query($conn, $sql2)) {
 

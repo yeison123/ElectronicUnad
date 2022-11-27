@@ -12,7 +12,7 @@ if (!$conn) {
 }
 
 // sql to create table
-$sql = "CREATE TABLE pruductos (
+$sql = "CREATE TABLE productos (
 id INT(10) PRIMARY KEY,
 nombre_producto VARCHAR(250),
 marca VARCHAR(250),
